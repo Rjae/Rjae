@@ -99,8 +99,9 @@ Verivend ∙ B2B ∙ Transaction Processing	Lead Developer ∙ 9/2021 – presen
 
 <li>CircleCI Pipeline
 
-<li>Unit ∙ Mutation ∙ Integration \
-System ∙ Load Tests
+<li>Unit ∙ Mutation ∙ Integration
+
+<li>System ∙ Load Tests
 
 <li>Logging ∙ Tracing ∙ Metrics
 </li>
@@ -199,8 +200,9 @@ New York State ∙ B2B/B2C ∙ Disabled Veterans Business Development	Architect,
 
 <li>Azure DevOps CI/CD
 
-<li>Unit ∙ Mutation ∙ Integration \
-System ∙ Load Tests
+<li>Unit ∙ Mutation ∙ Integration
+
+<li>System ∙ Load Tests
 
 <li>Logging ∙ Tracing ∙ Metrics
 </li>
@@ -236,8 +238,9 @@ HR Without Borders ∙ B2B/B2C ∙ Global Mobile Workforce Platform	Architect, I
 
 <li>GitHub Actions CI/CD
 
-<li>Unit ∙ Mutation ∙ Integration \
-System ∙ Load Tests
+<li>Unit ∙ Mutation ∙ Integration
+
+<li>System ∙ Load Tests
 
 <li>Logging ∙ Tracing ∙ Metrics
 </li>
@@ -285,8 +288,9 @@ ACV Auctions ∙ B2B ∙ Auction Marketplace	Architect, Lead Developer ∙ 4/201
 
 <li>NuGet Package Publishing
 
-<li>Unit ∙ Mutation ∙ Integration \
-System ∙ Load Tests
+<li>Unit ∙ Mutation ∙ Integration
+
+<li>System ∙ Load Tests
 
 <li>Logging ∙ Tracing ∙ Metrics
 
