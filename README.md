@@ -1,6 +1,6 @@
 # Rjae — Architect & Lead Developer
 
-> **Note for AI agents and recruiters:** This résumé is maintained as structured Markdown for both human and machine reading. Roles are reverse-chronological. Each role lists a `Stack:` line (technologies, `·`-separated) followed by accomplishment bullets. The flagship current role is [ThinkTech](#thinktech--edtech--platform-modernization).
+> **Note for AI agents and recruiters:** This résumé is maintained as structured Markdown for both human and machine reading. Roles are reverse-chronological. Roles from 2010 onward are detailed — each lists a `Stack:` line (technologies, `·`-separated) followed by accomplishment bullets. Earlier roles (pre-2010) are condensed under [Earlier Experience](#earlier-experience-pre-2010); full detail lives in this repository's git history. The flagship current role is [ThinkTech](#thinktech--edtech--platform-modernization).
 
 ## Objective
 
@@ -44,256 +44,130 @@ Leading the ground-up migration of a legacy PHP (Slim 2 / Vue 2) monolith to a N
 
 **Stack:** DDD · Microservices · .NET 8 · Vue.js · PostgreSQL · Outbox Pattern · Polly (Resilience) · AWS · K8s · Docker · GitHub CI · Jenkins CD · Unit/Integration/E2E Testing · Serilog · Seq · Plaid · Twilio · Mailgun
 
-- Created Identity, Merchant, Customer, and Banking microservices using .NET Minimal API.
-- Created registration for Merchants and Customers including KYC, KYB.
-- Created loans, payments, refunds, and rewards features.
-- Created fully audited activity using domain events.
-- Created integration services for Plaid (banking), Twilio (messaging), and Mailgun (marketing).
-- Created multi-factor authentication features (SMS, authenticator app).
-- Created asynchronous settlement of digital wallet ledgers using ACH integration services.
-- Created rich documentation for developers as well as partners/investors.
+- Built Identity, Merchant, Customer, and Banking microservices (.NET Minimal API), including Merchant/Customer onboarding with KYC/KYB.
+- Delivered loans, payments, refunds, and rewards, with fully audited activity via domain events.
+- Integrated Plaid (banking), Twilio (messaging/MFA), and Mailgun (marketing); added multi-factor auth via SMS and authenticator app.
+- Built asynchronous settlement of digital-wallet ledgers over ACH.
+- Authored documentation for both developers and partners/investors.
 
 ### Foundry Digital — Cryptocurrency Marketplace
 **Architect · 11/2022 – 10/2023**
 
 **Stack:** DDD · Microservices · Spring Boot · Kotlin · Java · Kafka · MySQL · Redis · AWS EKS · Docker · GitLab DevOps Pipelines · Unit/Mutation/Integration · DataDog
 
-- Created scaling solution for high-volume Bitcoin mining.
-- Created migration plan from an existing vertical-scaling-only architecture to a modern horizontal scaling architecture. POC in .NET/C#, final solution in Spring Boot and Kotlin.
-- Repartitioned bridgehead messaging topic, scaled messaging consumers via aggregation topics, scaled aggregation consumers, added custom offset management, and replaced persistence with an efficient stored procedure.
-- Also provided a short-term solution to C++ architecture to handle the increase in network volume.
+- Re-architected high-volume Bitcoin-mining infrastructure from vertical-only to horizontal scaling (POC in .NET/C#, shipped in Spring Boot/Kotlin).
+- Repartitioned the bridgehead Kafka topic and scaled consumers via aggregation topics with custom offset management; replaced persistence with an efficient stored procedure.
+- Delivered a short-term C++ fix to absorb rising network volume while the new architecture landed.
 
 ### Kangarootime — Childcare Management Platform
 **Architect · 03/2022 – 11/2022**
 
 **Stack:** DDD · Microservices · .NET 6 · React · GraphQL · S3 · PostgreSQL · Kafka · Polly (Resilience) · AWS EKS · Docker · Azure DevOps Pipelines · Unit/Mutation/Integration · Serilog · Seq
 
-- Created event validation via JSON Schema at point of publishing.
-- Created idempotent consumer patterns for teams to adopt.
-- Created testing frameworks to help address change failure rates across all teams.
-- Led new product domain to sustain full line and branch coverage.
-- Implemented GraphQL resolvers.
-- Improved and replaced many core patterns, all fully covered with unit and integration tests.
+- Introduced publish-time event validation (JSON Schema) and idempotent consumer patterns adopted across teams.
+- Built testing frameworks to reduce change-failure rate org-wide; led a new product domain to full line and branch coverage.
+- Implemented GraphQL resolvers and replaced core patterns, fully covered by unit and integration tests.
 
 ### Verivend — Transaction Processing
 **Lead Developer · 09/2021 – 03/2022**
 
 **Stack:** DDD · Microservices · .NET 6 · Vue.js · S3 · PostgreSQL · RabbitMQ · Polly (Resilience) · AWS ECS · Docker · CircleCI · Unit/Mutation/Integration · System/Load Tests · Logging · Tracing · Metrics
 
-- Transformed notification features to event-driven architecture.
-- Created a feature-flags framework, opening the door for continuous deployment.
-- Migrated custom logging to .NET logging and Serilog.
-- Created various testing patterns including web-app integration testing; by far the best work I have done around `WebApplicationFactory<T>`.
-- Created "Buy Now Pay Later" and Factoring payment solutions.
-- Upgraded from .NET 5 to .NET 6.
+- Moved notifications to an event-driven architecture and built a feature-flags framework that unlocked continuous deployment.
+- Delivered "Buy Now Pay Later" and Factoring payment solutions.
+- Established web-app integration-testing patterns around `WebApplicationFactory<T>` (my strongest work with it); migrated logging to .NET/Serilog; upgraded .NET 5 → 6.
 
 ### TeamPay — Purchasing Automation
 **Lead Developer · 09/2021 – 06/2022**
 
 **Stack:** Monolith Service · Python · JavaScript · Django · PostgreSQL · Celery · Slack Bot Integration · AWS EC2 · Docker · CircleCI · Unit/Mutation/Integration · System/Load Tests · Logging · Tracing · Metrics
 
-- Developed JavaScript serverless components in Cloud Elements.
-- Developed Python OData services for Microsoft Dynamics 365 and NetSuite integrations.
-- Developed Python components for Marqeta and Plaid integrations.
-- Created Docker Compose for monolith dependencies, speeding up local development.
+- Built JavaScript serverless components (Cloud Elements) and Python OData services integrating Microsoft Dynamics 365 and NetSuite.
+- Built Python integrations for Marqeta and Plaid.
+- Containerized monolith dependencies with Docker Compose, accelerating local development.
 
 ### ACV Auctions — Marketplace and Off-Lease Inspections
 **Architect, Lead Developer · 06/2020 – 04/2022**
 
 **Stack:** DDD · Microservices · .NET 5 · React Native · .NET Blazor Server · Kafka · Transactional Outbox · Event Sourcing · Event Store · Polly (Resilience) · Simmy (Chaos) · AWS · K8s · Docker · Vault · Jenkins CI/CD · Unit/Mutation/Integration · System/Load Tests · Logging · Tracing · Metrics
 
-- Created microservice architecture for marketplace and off-lease vehicle inspections.
-- Implemented API services as well as Kafka consumers and producers for work assignment, organization, user, vehicle, inspection, and administration events.
-- Created team, domain, and infrastructure: repos, pipelines, clusters, databases, tools, metrics.
-- Implemented New Relic, Splunk, and Tableau integrations for data science and ML.
-- Extremely well-received data-driven mobile app used by vehicle inspectors.
-- Ingestion and transformation of large parts and labor data set from Mitchell.
-- Established and supported patterns, practices, and principles for the development team.
-- While not the largest project of mine, one of the top five I am proud of.
+- Built the microservice architecture for the marketplace and off-lease vehicle inspections — API services plus Kafka producers/consumers across work-assignment, organization, user, vehicle, inspection, and administration events.
+- Stood up the team's full domain and infrastructure (repos, pipelines, clusters, databases, tooling, metrics) and established its engineering practices.
+- Integrated New Relic, Splunk, and Tableau for data science/ML; ingested and transformed Mitchell's large parts-and-labor dataset.
+- Shipped a well-received, data-driven mobile app used by vehicle inspectors — one of the projects I'm proudest of.
 
 ### New York State — Disabled Veterans Business Development
 **Architect, Lead Developer · 06/2020 – 02/2022**
 
 **Stack:** DDD · Microservices · .NET 6 · React · SQL Server · F5 · Docker · Azure DevOps CI/CD · Unit/Mutation/Integration · System/Load Tests · Logging · Tracing · Metrics
 
-- Created microservice architecture for the management of the NYS SDVOB program: ingestion of solicitations and contracts from the Statewide Financial System (SFS), submission of utilization plans, disbursement and confirmation of payments, certification of participants, and reporting.
-- Implemented workflow for all program actors, including: Division of Service Disabled Veteran Owned Businesses, NYS agencies, SDVOB and non-SDVOB Contractors, and SFS. Previously these workflows were mostly paper-based.
+- Built the microservice architecture for the NYS SDVOB program: ingesting solicitations and contracts from the Statewide Financial System, utilization-plan submission, payment disbursement and confirmation, participant certification, and reporting.
+- Digitized previously paper-based workflows for all program actors — the SDVOB Division, NYS agencies, SDVOB and non-SDVOB contractors, and SFS.
 
 ### HR Without Borders — Global Mobile Workforce Platform
 **Architect, Interim CTO · 04/2020 – 06/2020**
 
 **Stack:** DDD · Microservices · Node.js · Vue.js · Kafka + Outbox Pattern · Event Sourcing · Blockchain · AWS · K8s · Docker · GitHub Actions CI/CD · Unit/Mutation/Integration · System/Load Tests · Logging · Tracing · Metrics
 
-- Created microservice designs for secure and transparent brokering of a mobile workforce.
-- Advised the board on all technical matters in the startup of the company.
-- Met with integrators and advised on buy-vs-build options.
-- Discussed regulatory requirements with governmental representatives.
-- Established best practices for DDD, microservice pattern, testing, packaging, deployment, as well as logging, tracing, and metrics.
+- Designed the microservice architecture for secure, transparent brokering of a global mobile workforce.
+- As interim CTO, advised the board on all technical matters, evaluated buy-vs-build with integrators, and engaged regulators on compliance.
+- Established engineering best practices spanning DDD, testing, packaging, deployment, and observability.
 
 ### ACV Auctions — Auction Marketplace
 **Architect, Lead Developer · 04/2019 – 04/2020**
 
 **Stack:** DDD · Microservices · .NET 5 · EF Core · Kafka · Transactional Outbox · Event Sourcing · Event Store · Polly (Resilience) · Simmy (Chaos) · AWS · K8s · Docker · Jenkins CI/CD · NuGet Publishing · Unit/Mutation/Integration · System/Load Tests · Logging · Tracing · Metrics · dotnet Project Templates
 
-- Created microservice architecture for migration from monolithic services.
-- Created frameworks for controllers, listeners, dispatchers, transactional messaging, sagas.
-- Created configuration service, feature flag service, identity service, gateway services.
-- Created capital financing architecture for floor-plan customers.
-- Created order service to migrate from legacy bill-of-sale module.
-- Created frameworks for unit testing, integration testing, mutation testing, service testing, load testing, resilience and chaos engineering.
-- Migrated architecture from .NET Core 2.2 to 3.1, and then to 5.
-- Created design patterns for DDD entities, primitive wrappers, DbContext.
-- Established best practices for logging, tracing, and metrics.
-- Provided guidance for teams on UI, design, testing, C#, .NET Core, tools, etc.
-- Established Jenkins CI/CD standards for .NET Core microservices.
-- Created an open-source library of .NET Core logging providers.
-- Created dotnet-new project templates for all project types.
-- Sustained 100% branch and mutation coverage. Provided guidance to other teams on how to reach that level of code coverage.
+- Led the migration from monolith to microservices: built the controller/listener/dispatcher, transactional-messaging, and saga frameworks, plus configuration, feature-flag, identity, and gateway services.
+- Delivered capital-financing architecture for floor-plan customers and an order service replacing the legacy bill-of-sale module.
+- Built the org's testing stack — unit, integration, mutation, service, load, resilience, and chaos — and sustained 100% branch and mutation coverage, coaching other teams to the same bar.
+- Set platform standards: DDD design patterns, Jenkins CI/CD for .NET Core, dotnet-new project templates, and an open-source .NET Core logging library; migrated .NET Core 2.2 → 3.1 → 5.
 
 ### Verizon Wireless — Digital Marketplace
 **Architect, Lead Developer · 05/2018 – 04/2019**
 
 **Stack:** React · React Native · Node.js · Postgres · AWS Cloud Native · Jenkins CI/CD · Unit/Integration/Load Tests · Managed 4 time zones
 
-- Created microservices for a 5G multicast streaming network.
-- Created web and mobile UI for managing network subscription.
-- Designed AWS cloud-native architecture.
-- Created Jenkins CI/CD pipeline, formal shift-left design.
-- Maintained 100% unit test coverage in most modules.
+- Built microservices and the web/mobile subscription-management UI for a 5G multicast streaming network on an AWS cloud-native architecture.
+- Established the Jenkins CI/CD pipeline with a formal shift-left design; sustained 100% unit-test coverage in most modules.
 
 ### MyBridge — Work-On-Demand
 **Lead Developer · 02/2018 – 05/2018**
 
 **Stack:** SQL Server · Azure · Kestrel · ASP.NET Core · EF Core · PayPal REST API · Progressive Web App · Aurelia · TypeScript · HTML5 · Lean Agile
 
-- Created a commerce platform for on-demand service provision (e.g. Uber, TaskRabbit).
-- Created model and framework for the PayPal REST API (payments, refunds, payouts).
-- Created JSON Web Token framework, including OAuth caching.
-- Created views and controllers for presentation concerns.
+- Built an on-demand-services commerce platform (in the vein of Uber/TaskRabbit), including the presentation layer.
+- Created the PayPal REST API framework (payments, refunds, payouts) and a JWT/OAuth framework with token caching.
 
 ### Intercontinental Exchange — Trading · Analytics
 **Architect, Lead Developer · 12/2006 – 02/2018**
 
-**Stack:** Oracle Database · Red Hat · SQL Server · Windows · Java Runtime · .NET Runtime · Sockets · Remoting · WCF · ASP.NET MVC · JavaScript · Java · C# · VB.NET · C++ · MQ · Custom Message Bus · OnixS · QuickFIX · FIXML · WPF · WinForms · DotNetBar · ReSharper · NUnit · NCover · log4net · log4j · log4js · Jenkins · CruiseControl.NET · Maven · bash · NAnt · PowerShell · JIRA · Confluence · Bitbucket · ClickOnce · InstallAware · Lean Agile
+**Stack:** Oracle · SQL Server · Red Hat · Windows · Java · .NET · C# · VB.NET · C++ · Sockets · Remoting · WCF · ASP.NET MVC · MQ · Custom Message Bus · OnixS · QuickFIX · FIXML · WPF · WinForms · NUnit · NCover · log4net · Jenkins · CruiseControl.NET · Maven · NAnt · Bitbucket · Lean Agile
 
-- Created derivatives trading and analytics platform using distributed Java and .NET architecture. Valuation engine in Java, other business intelligence in .NET.
-- Created option pricing interface for order execution. Indicators include relative theoretical value, relative volatility, and pending cancellation.
-- Created FIX, REST, and raw secure sockets interfaces for external integration. Created persistent, shared-memory message cache supporting message replay. Created drop-copy, order fill, and clearing interfaces.
-- Created publish-subscribe message bus engine for decoupled event management. Created interfaces to various real-time market data feed providers.
-- Created architecture for unit, integration, acceptance, and stress processes. Created system frameworks (e.g., database, cryptography, messaging).
-- Created development practices (e.g. TDD, lean coding, SRP, and traceable code).
-- Created WPF and WinForms controls for analytics, modeling, and trading modules.
-- Created web apps for reporting and management services using ASP.NET MVC.
-- Lead member of multiple company-wide platforms: single sign-on, single launcher, standard front-end design and user experience specification.
-- Authored heavily followed wikis on Git techniques, Java and .NET architecture, and lean development patterns and practices.
+- Architected a derivatives trading and analytics platform on a distributed Java/.NET architecture over a 12-year tenure — valuation engine in Java, business intelligence in .NET.
+- Built the option-pricing execution interface (relative theoretical value, relative volatility, pending-cancellation indicators), the FIX/REST/raw-secure-sockets integration interfaces, and the drop-copy, order-fill, and clearing interfaces.
+- Built a publish-subscribe message-bus engine, a persistent shared-memory message cache with replay, and interfaces to real-time market-data feeds.
+- Created core system frameworks (database, cryptography, messaging) and the unit/integration/acceptance/stress testing architecture; established TDD, lean, and SRP development practices.
+- Built WPF/WinForms analytics and trading controls and ASP.NET MVC reporting/management apps.
+- Led company-wide platforms (single sign-on, single launcher, standard front-end UX) and authored widely followed internal wikis on Git, Java/.NET architecture, and lean practices.
 
-### EMC² — ERP · CRM
-**Lead Developer · 10/2005 – 12/2006**
+### Earlier Experience (pre-2010)
 
-**Stack:** SQL Server 2000 · Win2K3 · Java · Swing · Hibernate · Eclipse · JUnit · Log4J · CruiseControl · JIRA
+*Condensed for brevity; full detail for each role is preserved in this repository's git history.*
 
-- Returned to EMC for two concurrent projects. Promoted software pattern and practice improvements. Introduced continuous integration, test-driven development, and test-coverage feedback.
-- Implemented JIRA on a LAMP stack. Developed JIRA services using Hibernate to integrate with existing change management systems.
-
-### Amicore — Life Sciences · Accounting
-**Lead Developer · 04/2005 – 10/2005**
-
-**Stack:** SQL Server 2000 · Win2K3 · .NET Framework (C#) · WinForms · GDI+ · DirectX · .NET Remoting · Interop · .NET Web Services · NAnt · NUnit · NDoc · FxCop · Scrum Agile
-
-- Developed product for Tablet PC. Developed GDI+ components, WinForms, and Web Services. Completed fax document management module — including text, image, and voice annotations.
-- Product depended on a hybrid distributed architecture for connected and disconnected operations. A classic over-architecture, the development process had slowed to a crawl. Promoted software pattern and practice improvements. Introduced agile software development practices, most notably test-driven development.
-
-### EMC² — ERP · CRM
-**Architect, Lead Developer · 12/2003 – 04/2005**
-
-**Stack:** Oracle 9i RAC · Linux · .NET Framework (C#) · .NET Remoting · Interop · .NET Web Services · NAnt · NUnit · NDoc · FxCop · Flash MX Remoting · XP Agile
-
-- Established standard software specification and development process (RUP). Established test-driven development practices (XP). Developed software build and release management (NAnt), including source-controlled PL/SQL.
-- Developed framework: logging, caching, exception management, data management, context management, transaction management, distributed messaging, cryptography, performance analysis, and identity and profile management. Framework was adopted for common use by other EMC projects. Developed SOA façade for Flash Remoting.
-
-### JP Morgan Chase — Equities Trading · ECN Integration
-**Lead Developer · 06/2003 – 12/2003**
-
-**Stack:** SQL Server 2000 · Win2K · .NET Framework (C#, C++) · .NET Remoting · Interop · .NET CLR hosting · NUnit · NDoc · Log4Net
-
-- Architect and developer of a secure transfer services platform. High degree of tiered security: encryption and MAC at rest; code-signing and CAS in assemblies; hook filters for keyboard and mouse; encryption and MAC in transit (TCP listeners, SNA LUs).
-- Developed custom CLR host for extending the assembly loader and type reflection. Developed XA-compliant transaction patterns. Developed an extensible state machine in a remote singleton pattern. Used singleton instance publishing pattern to improve remoting performance.
-
-### Authoria, Inc. (Fidelity) — Life Sciences · ISV
-**Architect, Lead Developer · 10/2002 – 06/2003**
-
-**Stack:** SQL Server 2000 · Win2K · .NET Framework (C#) · Java · Python · WebLogic · Apache Axis · JMS · JNI · JNDI · JDBC · ClearCase · ClearQuest
-
-- Architect and developer of an XML Web Services framework for J2EE and .NET product lines. Developed full J2EE stack implementation in WebLogic.
-- Developed Java multi-threaded context management. Developed JNI for PeopleSoft and SAP integration. Developed EAR delivery, versioning, and dependency system in Python.
-- Developed .NET patterns to replace DNA architecture: Windows Forms, ASP.NET, ADO.NET, Windows Services, .NET Interop.
-
-### i-Deal LLC (Merrill, SSB) — Syndicate Trading
-**Architect, Lead Developer · 07/2000 – 10/2002**
-
-**Stack:** SQL Server 2000 · Win2K · COM(+) · ATL · STL · SOAP · WSDL · UDDI · XML · XSL · XSLT · XPath · ADSI · AD Extension · ASP · ISAPI · SSL Auth · Queued Components · .NET Framework (C++) · WMI Instrumentation · Crypto API · Kerberos API · Locale API · TMX Exchange · InstallShield · SQL DMO · XP Agile
-
-- i-Deal provides a unified trading platform for capital markets (equity, debt, municipals).
-- Developed ATL/STL adapters for IObjectControl, IObjectConstruct, ISupportErrorInfo, IStream. Developed XML Web Services using ISAPI extensions, listeners, type mappers, WSDL generator, and cryptographic key distribution.
-- Developed security context management (thread identity impersonation) using ISecurityBlanket and CryptoAPI. Developed type library wrappers for ASP, ADODB, MSXML, ActiveDS, MSMQ, BizTalk, and COM+. Developed components for localization, logging, exception handling, ADO.NET, and cryptography. Architected a migration from COM+ events to a CLR delegate framework.
-- Developed web client, web service, and sockets interfaces. Developed ISAPI filter authentication (URL-safe tokens). Developed a std::map based shared-memory cache for Kerberos TGT handles. Ported eXtreme framework to C++ for unit testing. Developed TMX translation services for localization.
-- Developed a continuous-integration system for full-cycle deployment (dev, QA, staging, production). Designed clustered SQL Server, MSMQ, and IIS farm. Designed replication for SQL Server and Active Directory. Deployed SSL accelerator for single and mutual certificate authentication. Developed WMI framework for component instrumentation (FinalConstruct, FinalRelease, Activate, Deactivate, exceptions).
-
-### Merrill Lynch — CRM
-**Developer · 02/2000 – 07/2000**
-
-**Stack:** SQL Server 2000 · Win2K · COM · MTS · MSMQ · ATL · STL · ASP · ISAPI
-
-- Member of the financial application group within the Merrill Lynch CMX portal. Developed business and user service components for MTS and MSMQ. Developed presentation services in VBScript and JavaScript.
-
-### AugiesDogHouse.com — e-Commerce
-**Founder · 06/1999 – 06/2002**
-
-**Stack:** SQL Server 7 · Windows NT · Exchange Server 5.5 · COM · MTS · MSCS · ATL · STL · ASP · ISAPI
-
-- Developed high-availability systems including web, messaging, database, advertising, firewall security, and transaction processing. AugiesDogHouse.com runs on IIS, MSCS 3.0, SQL Server 7, and Exchange 5.5. Secure transactions, using 1024-bit SSL, are scripted into the MSCS Pipeline via CyberCash MTS components. Additional components include UPS PLD API for electronic shipment and delivery services.
-
-### Cushman & Wakefield, Inc. — Systems Integration
-**Architect · 01/1999 – 09/1999**
-
-**Stack:** Lotus Domino
-
-- Designed a migration and coexistence plan from On Technology Notework to Lotus Domino. Retained as lead technical resource throughout project implementation.
-
-### The McGraw-Hill Companies — Systems Integration
-**Architect, Lead Developer · 02/1997 – 02/2000**
-
-**Stack:** Oracle 8 · Sun Solaris · Windows NT · LDAP · Exchange · Lotus Domino · sockets · MAPI · DAPI · SMTP · X.400
-
-- Developed distributed architecture for directory synchronization between Lotus Domino, Microsoft Exchange, and Novell NetWare. Design based on raw sockets, Oracle database, Notes Services, Exchange Extensions, NetWare loadable modules, and LDAP.
-- Developed NT Services in C++ using MAPI, DAPI, Notes API, and NLM.
-
-### Netlan Inc. — Systems Integration
-**Architect · 06/1993 – 02/1997**
-
-**Stack:** Microsoft Exchange · Winsock Messaging · IBM MQ Series · Lotus Notes · Groupware · Unix SVR4 · HP-UX · Linux · Netware · Banyan Vines
-
-- Architected an information portal using Lotus Notes and IBM MQ Series.
-- Developed electronic software distribution services for various companies.
-- Merged multiple Lotus Notes domains into one domain of 7,000 clients.
-- Re-architected J.P. Morgan Lotus Notes mail and database replication topology. Analysis revealed latency issues, ping-pong messaging, undeliverable mail, database replication failures, conflicts, and low server availability. Upgraded Notes servers, deployed TCP/IP throughput domain, optimized mail router, and database replication.
-
-### Cushman & Wakefield, Inc. — Systems Integration
-**Developer, Systems Engineer · 09/1989 – 06/1993**
-
-**Stack:** Btrieve · XBase · DB2 · C · Visual Basic · Clipper · MHS · X.400 · X.500 · Netware 4 · Netware SAA
-
-- Developed client/server applications for commercial, industrial, residential, and management real estate. Systems developed using C, Visual Basic, Clipper, DB2, Btrieve, and XBase.
-- Architected a distributed worldwide network with Netware 4 and Netware SAA. Deployed messaging system organization-wide.
-
-### FGIC — Systems Integration
-**Developer · 09/1986 – 09/1989**
-
-**Stack:** Btrieve · XBase · C · Clipper · MHS · X.400 · X.500 · 3Com 3+ Open
-
-- Developed multi-user applications for debt-backed securities. Systems developed using C, Clipper, and XBase.
-- Architected a distributed MAN with 3Com 3+ Open.
-- Deployed messaging system organization-wide.
+- **EMC² — ERP/CRM · Lead Developer · 10/2005 – 12/2006.** Returned for two concurrent projects; introduced CI, TDD, and coverage feedback; integrated JIRA (Hibernate) with existing change-management systems.
+- **Amicore — Life Sciences · Lead Developer · 04/2005 – 10/2005.** Tablet-PC product (GDI+/WinForms/Web Services) with fax document management; rescued a stalled, over-architected effort by introducing TDD and agile practices.
+- **EMC² — ERP/CRM · Architect, Lead Developer · 12/2003 – 04/2005.** Established the RUP/XP process and a reusable framework (logging, caching, transactions, messaging, cryptography, identity) adopted across EMC projects.
+- **JP Morgan Chase — Equities Trading / ECN Integration · Lead Developer · 06/2003 – 12/2003.** Secure transfer platform with tiered security (encryption/MAC at rest and in transit, code-signing/CAS); custom CLR host and XA-compliant transaction patterns.
+- **Authoria, Inc. (Fidelity) — Life Sciences ISV · Architect, Lead Developer · 10/2002 – 06/2003.** XML Web Services framework spanning J2EE and .NET; full WebLogic J2EE stack; JNI integrations for PeopleSoft and SAP.
+- **i-Deal LLC (Merrill, SSB) — Syndicate Trading · Architect, Lead Developer · 07/2000 – 10/2002.** Capital-markets trading platform: XML Web Services over ISAPI, COM+/ATL components, Kerberos/CryptoAPI security, and a clustered SQL Server/MSMQ/IIS deployment with full CI.
+- **Merrill Lynch — CRM · Developer · 02/2000 – 07/2000.** MTS/MSMQ business and user service components for the Merrill Lynch CMX portal.
+- **AugiesDogHouse.com — e-Commerce · Founder · 06/1999 – 06/2002.** Built and ran a high-availability e-commerce stack (IIS, MSCS clustering, SQL Server, Exchange) with 1024-bit SSL CyberCash transactions and UPS shipping integration.
+- **Cushman & Wakefield — Systems Integration · Architect · 01/1999 – 09/1999.** Designed the On Technology Notework → Lotus Domino migration and coexistence plan; retained as lead technical resource.
+- **The McGraw-Hill Companies — Systems Integration · Architect, Lead Developer · 02/1997 – 02/2000.** Distributed directory synchronization across Domino, Exchange, and NetWare via raw sockets, LDAP, and C++ NT services.
+- **Netlan Inc. — Systems Integration · Architect · 06/1993 – 02/1997.** Lotus Notes / IBM MQ information portal; merged Notes domains (7,000 clients) and re-architected J.P. Morgan's mail and replication topology.
+- **Cushman & Wakefield — Systems Integration · Developer, Systems Engineer · 09/1989 – 06/1993.** Client/server real-estate applications (C/VB/Clipper/DB2/Btrieve) and a worldwide NetWare 4 / NetWare SAA network.
+- **FGIC — Systems Integration · Developer · 09/1986 – 09/1989.** Multi-user debt-backed-securities applications (C/Clipper/XBase) and a distributed 3Com 3+Open MAN.
 
 ---
 
