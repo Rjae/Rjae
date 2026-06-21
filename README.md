@@ -15,9 +15,9 @@ I possess a unique and diverse skill set that encompasses effective communicatio
 ### ThinkTech — EdTech · Platform Modernization
 **Architect · 03/2024 – present**
 
-**Stack:** Nuxt 4 · Vue 3.5 · TypeScript · Nitro · Drizzle ORM · MySQL · .NET 8 Worker · Transactional Outbox · Istio · Helm · Kubernetes · Docker · Tailwind 4 · Nuxt UI · Playwright · Vitest · GitHub Actions CI · Jenkins CD · Claude Code · multi-agent workflows
+**Stack:** Kotlin Multiplatform · Compose Multiplatform · Ktor · Koin · Firebase · Nuxt 4 · Vue 3.5 · TypeScript · Nitro · Drizzle ORM · MySQL · .NET 8 Worker · Transactional Outbox · Istio · Helm · Kubernetes · Docker · Tailwind 4 · Nuxt UI · Playwright · Vitest · GitHub Actions CI · Jenkins CD · Claude Code · multi-agent workflows
 
-Leading the ground-up migration of a legacy PHP (Slim 2 / Vue 2) monolith to a Nuxt 4 SSR platform — re-platformed one feature at a time, cohabiting with the live legacy app under independent sessions and zero cross-app server calls. The migration is driven almost entirely through autonomous, multi-agent development workflows I designed.
+As architect of the ThinkTech Platform's modernization, I lead two ground-up builds in parallel: a single-codebase cross-platform client app (iOS, Android, and Web) and the migration of a legacy PHP (Slim 2 / Vue 2) monolith to a Nuxt 4 SSR web platform — the latter re-platformed one feature at a time, cohabiting with the live legacy app under independent sessions and zero cross-app server calls. Both are driven largely through autonomous, multi-agent development workflows I designed.
 
 **Agentic development — methods I invented:**
 
@@ -31,7 +31,14 @@ Leading the ground-up migration of a legacy PHP (Slim 2 / Vue 2) monolith to a N
 - **AI PR review + auto-merge loop.** Label-gated AI code review that squash-merges on approval, hardened with an anti-tampering guard that rejects any pull request attempting to alter its own reviewer.
 - **Repeatable port loop.** Plan → security pass → implement → automated design-fidelity parity gate against the live legacy reference → reviewer agent → end-to-end test → deploy → verify, codified so each feature ships the same way.
 
-**Platform engineering:**
+**Cross-platform client (Kotlin / Compose Multiplatform):**
+
+- Designed and built a single-codebase Compose Multiplatform app that ships native **iOS, Android, and Web** (wasmJs — Compose running in the browser) from shared Kotlin.
+- Delivered passkey (WebAuthn) biometric and password authentication, parent and teacher dashboards, threaded parent–teacher messaging, assignments with student submissions and results, roster and group administration, multi-tenant organizations, and entity-level feature flags.
+- Architected with Ktor (networking), Koin (DI), Navigation 3, a Repository pattern over `Result<T>`, `StateFlow` state, and `expect`/`actual` platform layers (DataStore vs. browser LocalStorage token stores, Firebase Cloud Messaging push); includes LaTeX-to-Unicode rendering for rich math content.
+- Backed by Playwright E2E against the web target, detekt static analysis, a Go dependency-audit CLI with weekly CI, and autonomous maintenance workflows.
+
+**Web platform engineering:**
 
 - Drizzle ORM across ~80 tables with per-table ownership transition; a transactional Outbox consumed by a .NET 8 Worker for all asynchronous work (email, notifications, AI queries).
 - Full native auth lifecycle — sessions, CSRF, and OAuth (Google, Microsoft, Clever, ClassLink, EdLink, Schoology) — plus a TypeScript port of the legacy PHP session format for seamless cohabitation.
@@ -173,15 +180,17 @@ Leading the ground-up migration of a legacy PHP (Slim 2 / Vue 2) monolith to a N
 
 ## Skills (TL;DR)
 
-**Languages & Frameworks:** Node.js · Java · C# · C++ · Python · Spring Boot · .NET Core · Django · Hibernate · EF Core · SQLAlchemy · React · Angular · Vue.js · Bootstrap · Material UI
+**Languages & Frameworks:** Node.js · Java · Kotlin · C# · C++ · Python · Spring Boot · .NET Core · Django · Nuxt · Vue.js · React · Angular · Hibernate · EF Core · SQLAlchemy · Drizzle ORM · Bootstrap · Material UI
+
+**Mobile & Cross-platform:** Kotlin Multiplatform · Compose Multiplatform · Ktor · Koin · WebAuthn / Passkeys · Firebase Cloud Messaging · wasmJs · Gradle · Android · iOS
 
 **Messaging & Data:** Kafka · RabbitMQ · ActiveMQ · ZeroMQ · Postgres · Oracle · MySQL · SQL Server · FIX · Sockets · REST · gRPC · GraphQL
 
-**Testing & Resilience:** Jest · JUnit · xUnit · NUnit · pytest · Stryker · PITest · Mutmut · Sharpfuzz · Resilience4j · Polly · Simmy
+**Testing & Resilience:** Playwright · Vitest · Jest · JUnit · xUnit · NUnit · pytest · Stryker · PITest · Mutmut · Sharpfuzz · detekt · Resilience4j · Polly · Simmy
 
-**Ops & Observability:** Terraform · CloudFormation · Ansible · Jenkins · GitHub · GitLab · Travis · Azure DevOps · pino · log4j · .NET Core Logging · Python Logging · New Relic · Splunk
+**Ops & Observability:** Terraform · CloudFormation · Ansible · Jenkins · GitHub · GitLab · Travis · Azure DevOps · pino · Serilog · Seq · Napier · log4j · .NET Core Logging · Python Logging · New Relic · DataDog · Splunk
 
-**Platforms & Tooling:** VS Code · IntelliJ · Visual Studio · PyCharm · Linux · macOS · Windows · Android · iOS
+**Platforms & Tooling:** VS Code · IntelliJ · Visual Studio · PyCharm · Android Studio · Xcode · Linux · macOS · Windows
 
 **Working principles:** Done is better than perfect · Single Responsibility Principle · Push, integrate, deploy continuously · Deliver outcomes, not technology · Log carefully, yet liberally · Share experience with the organization · Continuously document the system · Be excellent in production support
 
