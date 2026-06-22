@@ -52,7 +52,7 @@ As architect of the ThinkTech Platform's modernization, I lead two ground-up bui
 
 **Stack:** .NET 8 · ASP.NET Core · Razor · Serilog · Salesforce · SmartyStreets · Bitbucket · Claude Code (agentic workflow)
 
-- Led development of the member account-management web application (`account-web-v2`) for the American Academy of Family Physicians, with Salesforce as the system of record.
+- Led development of the member account-management web application for the American Academy of Family Physicians, with Salesforce as the system of record.
 - Streamlined account, email-verification, and preference-management flows; consolidated authentication and retired legacy login/logout surfaces in favor of centralized auth.
 - Integrated SmartyStreets address validation and Serilog (SQL Server sink) observability across the app.
 - Drove delivery through a Claude Code agentic development environment I set up for the codebase (standards, build automation, and agent guidance).
