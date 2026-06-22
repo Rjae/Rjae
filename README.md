@@ -21,6 +21,7 @@ As architect of the ThinkTech Platform's modernization, I lead two ground-up bui
 
 **Agentic development — methods I invented:**
 
+- **Agentic environment for a non-technical founder.** Designed a guided, agentic development environment through which ThinkTech's founder — who is not an engineer — has independently designed and shipped two UI-complex production web applications.
 - **Agent-consumable system of record.** Authored a structured operating manual, a machine-readable feature backlog, design/parity plans, and a persistent agent memory store so AI agents can plan and execute feature ports autonomously — with project conventions enforced as first-class, machine-checkable rules.
 - **Role-scoped subagent fleet.** Designed specialized agents (architect, developer, designer, reviewer, tester, documenter, plus cross-repo PHP and .NET developers), each with bounded tools and a single responsibility, composed per feature.
 - **Multi-agent orchestration.** Built fan-out / pipeline workflows with adversarial verification and judge panels — comprehensive, self-checking review and migration at a scale beyond any single context window.
@@ -56,6 +57,16 @@ As architect of the ThinkTech Platform's modernization, I lead two ground-up bui
 - Integrated Plaid (banking), Twilio (messaging/MFA), and Mailgun (marketing); added multi-factor auth via SMS and authenticator app.
 - Built asynchronous settlement of digital-wallet ledgers over ACH.
 - Authored documentation for both developers and partners/investors.
+
+### AAFP (American Academy of Family Physicians) — Member Account Web
+**Lead Developer · 08/2025 – 12/2025**
+
+**Stack:** .NET 8 · ASP.NET Core · Razor · Serilog · Salesforce · SmartyStreets · Bitbucket · Claude Code (agentic workflow)
+
+- Led development of the member account-management web application (`account-web-v2`) for the American Academy of Family Physicians, with Salesforce as the system of record.
+- Streamlined account, email-verification, and preference-management flows; consolidated authentication and retired legacy login/logout surfaces in favor of centralized auth.
+- Integrated SmartyStreets address validation and Serilog (SQL Server sink) observability across the app.
+- Drove delivery through a Claude Code agentic development environment I set up for the codebase (standards, build automation, and agent guidance).
 
 ### Foundry Digital — Cryptocurrency Marketplace
 **Architect · 11/2022 – 10/2023**
