@@ -47,17 +47,6 @@ As architect of the ThinkTech Platform's modernization, I lead two ground-up bui
 - Own Istio VirtualService on a shared gateway, Helm chart, HPA-autoscaled Kubernetes deployment; GitHub Actions CI and Jenkins CD.
 - Earlier in tenure: built the REST API and Edlink / LMS / SIS integrations, and containerized the legacy PHP application.
 
-### CashStash — Banking and Payments Platform
-**Architect · 10/2023 – present**
-
-**Stack:** DDD · Microservices · .NET 8 · Vue.js · PostgreSQL · Outbox Pattern · Polly (Resilience) · AWS · K8s · Docker · GitHub CI · Jenkins CD · Unit/Integration/E2E Testing · Serilog · Seq · Plaid · Twilio · Mailgun
-
-- Built Identity, Merchant, Customer, and Banking microservices (.NET Minimal API), including Merchant/Customer onboarding with KYC/KYB.
-- Delivered loans, payments, refunds, and rewards, with fully audited activity via domain events.
-- Integrated Plaid (banking), Twilio (messaging/MFA), and Mailgun (marketing); added multi-factor auth via SMS and authenticator app.
-- Built asynchronous settlement of digital-wallet ledgers over ACH.
-- Authored documentation for both developers and partners/investors.
-
 ### AAFP (American Academy of Family Physicians) — Member Account Web
 **Lead Developer · 08/2025 – 12/2025**
 
@@ -67,6 +56,17 @@ As architect of the ThinkTech Platform's modernization, I lead two ground-up bui
 - Streamlined account, email-verification, and preference-management flows; consolidated authentication and retired legacy login/logout surfaces in favor of centralized auth.
 - Integrated SmartyStreets address validation and Serilog (SQL Server sink) observability across the app.
 - Drove delivery through a Claude Code agentic development environment I set up for the codebase (standards, build automation, and agent guidance).
+
+### CashStash — Banking and Payments Platform
+**Architect · 10/2023 – 03/2024**
+
+**Stack:** DDD · Microservices · .NET 8 · Vue.js · PostgreSQL · Outbox Pattern · Polly (Resilience) · AWS · K8s · Docker · GitHub CI · Jenkins CD · Unit/Integration/E2E Testing · Serilog · Seq · Plaid · Twilio · Mailgun
+
+- Built Identity, Merchant, Customer, and Banking microservices (.NET Minimal API), including Merchant/Customer onboarding with KYC/KYB.
+- Delivered loans, payments, refunds, and rewards, with fully audited activity via domain events.
+- Integrated Plaid (banking), Twilio (messaging/MFA), and Mailgun (marketing); added multi-factor auth via SMS and authenticator app.
+- Built asynchronous settlement of digital-wallet ledgers over ACH.
+- Authored documentation for both developers and partners/investors.
 
 ### Foundry Digital — Cryptocurrency Marketplace
 **Architect · 11/2022 – 10/2023**
